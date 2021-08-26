@@ -1,0 +1,24 @@
+import React from "react";
+import {
+  Route,
+  Switch,
+  BrowserRouter as Router,
+  Redirect,
+} from "react-router-dom";
+import Welcome from "./Welcome";
+import Login from "./login";
+import Home from "./home";
+export default function Routes() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <Redirect to="/welcome" />
+        </Route>
+        <Route path="/welcome" exact component={Welcome} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/account" exact component={Home} />
+      </Switch>
+    </Router>
+  );
+}
