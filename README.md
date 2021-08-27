@@ -9,4 +9,7 @@ Information:
 - All the data is currently stored in Session Storage.
 - I have managed the User the Profile section in tabs to make it as child navigations.
 
+Unit Test
+- To run unit test please run command "npm test"
+
 Incase of any queries & updates please feel free to contact me.
