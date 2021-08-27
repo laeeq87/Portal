@@ -19,9 +19,11 @@ export default class Login extends React.Component {
       email: '',
       password: ''
     };
+    if (sessionStorage.getItem("login") && sessionStorage.getItem("login") === "true"){
+      this.nextPath("/account");
+    }
   }
 
-  
   nextPath(path) {
     this.props.history.push(path);
   }
@@ -72,7 +74,7 @@ export default class Login extends React.Component {
       this.notify("Please provide the valid email")
       return;
     } else if (!passwordValidation(this.state.password)) {
-      this.notify("Password must contain minimum eight characters, at least one letter and one number")
+      this.notify("Password must contain minimum eight characters, at least one letter , one number & one symbol")
       return;
     }
 
@@ -83,7 +85,7 @@ export default class Login extends React.Component {
 
   render() {
     return (
-      <div>
+      <div data-testid="tst-login">
         <div
           className="row justify-content-center align-items-center mt-5"
           style={{ height: "70vh" }}
@@ -99,7 +101,7 @@ export default class Login extends React.Component {
                   placeholder="name@example.com"
                   onChange={(event)=> {this.setState({email: event.target.value})}}
                 />
-                <label style={{ left: 10 }}>
+                <label style={{ left: 10 }} data-testid="tst-login-input-email">
                   Email address
                 </label>
               </div>
@@ -117,7 +119,7 @@ export default class Login extends React.Component {
               </div>
               <div className="row justify-content-center align-items-center mt-5">
                 <div className="col-6 text-center">
-                  <button className="btn btn-primary" style={{height:50, width:115}} disabled={this.valid()} onClick={() => this.onClickLogin()}> login</button>
+                  <button className="btn btn-primary" data-testid="tst-login-btn" style={{height:50, width:115}} disabled={this.valid()} onClick={() => this.onClickLogin()}>login</button>
                 </div>
               </div>
               {this.state.showPorfile === true ? this.showPopUp() : <div></div>}

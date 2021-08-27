@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  data-testid="tst-home"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row justify-content-center align-items-center"
+    >
+      <div
+        className="col-11"
+        data-testid="tst-home-nav"
+      >
+        <div
+          data-testid="tst-nav"
+        >
+          <nav>
+            <div
+              className="nav nav-tabs"
+              id="nav-tab"
+              role="tablist"
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                aria-controls="nav-home"
+                className="nav-link"
+                role="tab"
+              >
+                 
+                <h5>
+                   My Account 
+                </h5>
+              </div>
+              <a
+                className="text-decoration-none"
+                href="/account/profile"
+                onClick={[Function]}
+              >
+                <button
+                  aria-controls="nav-profile"
+                  aria-selected="true"
+                  className="nav-link active"
+                  data-bs-target="#nav-user"
+                  data-bs-toggle="tab"
+                  id="nav-profile-tab"
+                  role="tab"
+                  type="button"
+                >
+                  Profile
+                </button>
+              </a>
+              <a
+                className="text-decoration-none"
+                href="/account/user"
+                onClick={[Function]}
+              >
+                <button
+                  aria-controls="nav-user"
+                  aria-selected="true"
+                  className="nav-link "
+                  data-bs-target="#nav-profile"
+                  data-bs-toggle="tab"
+                  id="nav-user-tab"
+                  role="tab"
+                  type="button"
+                >
+                  User
+                </button>
+              </a>
+            </div>
+          </nav>
+          <div
+            className="tab-content"
+            id="nav-tabContent"
+          >
+            <div
+              aria-labelledby="nav-profile-tab"
+              className="tab-pane fade show active mt-5"
+              id="nav-user"
+              role="tabpanel"
+            >
+              <h3 />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

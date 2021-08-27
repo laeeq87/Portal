@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  data-testid="tst-login"
+>
+  <div
+    className="row justify-content-center align-items-center mt-5"
+    style={
+      Object {
+        "height": "70vh",
+      }
+    }
+  >
+    <div
+      className="col-md-3 pb-5  my-border"
+    >
+      <div
+        className="row justify-content-center align-items-cente"
+      >
+        <h4
+          className="text-center my-5"
+        >
+          Login
+        </h4>
+        <div
+          className="form-floating mb-3"
+        >
+          <input
+            className="form-control"
+            id="floatingInput"
+            onChange={[Function]}
+            placeholder="name@example.com"
+            type="email"
+          />
+          <label
+            data-testid="tst-login-input-email"
+            style={
+              Object {
+                "left": 10,
+              }
+            }
+          >
+            Email address
+          </label>
+        </div>
+        <div
+          className="form-floating"
+        >
+          <input
+            className="form-control"
+            id="floatingPassword"
+            onChange={[Function]}
+            placeholder="Password"
+            type="password"
+          />
+          <label
+            style={
+              Object {
+                "left": 10,
+              }
+            }
+          >
+            Password
+          </label>
+        </div>
+        <div
+          className="row justify-content-center align-items-center mt-5"
+        >
+          <div
+            className="col-6 text-center"
+          >
+            <button
+              className="btn btn-primary"
+              data-testid="tst-login-btn"
+              disabled={true}
+              onClick={[Function]}
+              style={
+                Object {
+                  "height": 50,
+                  "width": 115,
+                }
+              }
+            >
+              login
+            </button>
+          </div>
+        </div>
+        <div />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -25,7 +25,7 @@ constructor(props) {
 
   render() {
     return (
-      <div>
+      <div data-testid="tst-profile">
           <Row xs={1} md={4} className="d-flex justify-content-center">
             {Array.from({ length: 2 }).map((_, idx) => (
                 <Col>

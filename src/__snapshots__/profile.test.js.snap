@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  data-testid="tst-profile"
+>
+  <div
+    className="d-flex justify-content-center row row-cols-md-4 row-cols-1"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="card"
+        onClick={[Function]}
+      >
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Profile A
+          </div>
+          <p
+            className="card-text"
+          >
+            Herr Max Mustermann
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="card"
+        onClick={[Function]}
+      >
+        <div
+          className="card-body"
+        >
+          <div
+            className="card-title h5"
+          >
+            Profile B
+          </div>
+          <p
+            className="card-text"
+          >
+            Frau Mina Musterfrau
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

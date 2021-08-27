@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    className="container mt-5"
+  >
+    <div
+      className="row justify-content-center align-items-cente"
+    >
+      <div
+        className="col-6 text-center my-5 my-border"
+      >
+        <div
+          className="row justify-content-center my-5 align-items-cente"
+        >
+          <div
+            className="col-md-12 text-center "
+          >
+            <h3>
+               Welcome to our Portal
+            </h3>
+          </div>
+          <div
+            className="col-md-8 text-center mt-4"
+          >
+            <h5>
+              Please Go to Login :
+            </h5>
+            <button
+              className="btn btn-primary"
+              onClick={[Function]}
+            >
+               Login 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
